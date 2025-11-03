@@ -1,0 +1,13 @@
+[2025-03-11 21:39:27] [32minfo[39m : Server listening on port: 3000
+[2025-03-11 21:39:39] [32minfo[39m : [POST /users] - 1 record(s) affected.  34ms
+[2025-03-11 21:40:22] [32minfo[39m : [PATCH /users/1] - 1 record(s) affected.  2ms
+[2025-03-11 21:40:38] [32minfo[39m : [POST /users/login] - 0 record(s) affected.  2ms
+[2025-03-11 21:43:06] [32minfo[39m : Server listening on port: 3000
+[2025-03-11 21:44:27] [32minfo[39m : [POST /users/registration] - 0 record(s) affected.  28ms
+[2025-03-11 21:44:27] [32minfo[39m : [POST /users/registration] - 1 record(s) affected.  4ms
+[2025-03-11 21:45:50] [32minfo[39m : [POST /users/login] - 1 record(s) affected.  3ms
+[2025-03-11 21:45:55] [32minfo[39m : [POST /users/login] - 1 record(s) affected.  2ms
+[2025-03-11 22:13:20] [32minfo[39m : [POST /wallets] - 1 record(s) affected.  3ms
+[2025-03-11 22:13:41] [32minfo[39m : [GET /wallets/1] - 1 record(s) affected.  1ms
+[2025-03-11 22:15:30] [32minfo[39m : [POST /categories] - 1 record(s) affected.  2ms
+[2025-03-11 22:16:33] [32minfo[39m : [POST /transactions] - 1 record(s) affected.  2ms

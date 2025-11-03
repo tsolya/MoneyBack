@@ -1,0 +1,137 @@
+@host = http://localhost
+
+@port = 3000
+
+@url = {{host}}:{{port}}
+
+### GET ALL USERS
+GET {{url}}/users
+Content-Type: : application/json
+
+### GET USER BY ID
+GET {{url}}/users/1
+Content-Type: : application/json
+
+### CREATE NEW USER
+POST {{url}}/users
+Content-Type: application/json
+
+{
+    "name": "newuser",
+    "email": "test@test.com",
+    "password": "password123",
+    "role": "user",
+    "status": "active"
+}
+### UPDATE USER BY ID
+PATCH {{url}}/users/1
+Content-Type: application/json
+
+{
+    "name": "updateduser",
+    "email": "asd@asd.com",
+    "password": "newpassword123",
+    "role": "admin",
+    "status": "inactive"
+}
+### DELETE USER BY ID
+DELETE {{url}}/users/1
+Content-Type: application/json
+
+### LOGIN USER
+POST {{url}}/users/login
+Content-Type: application/json
+
+{
+    "email": "registertest@mail.hu",
+    "password": "Registerpassword123"
+}
+### REGISTER USER
+POST {{url}}/users/registration
+Content-Type: application/json
+
+{
+    "name": "registereduser",
+    "email": "registertest@mail.hu",
+    "password": "Registerpassword123",
+    "confirm": "Registerpassword123"
+}
+
+### GET ALL WALLETS
+GET {{url}}/wallets
+Content-Type: application/json
+
+### GET WALLET BY ID
+GET {{url}}/wallets/1
+Content-Type: application/json
+
+### CREATE NEW WALLET
+POST {{url}}/wallets
+Content-Type: application/json
+
+{
+    "userId": 1,
+    "name": "My Wallet",
+    "balance": 5000
+}
+
+### UPDATE WALLET BY ID
+PATCH {{url}}/wallets/1
+Content-Type: application/json
+
+{
+    "userId": 1,
+    "name": "Updated Wallet",
+    "balance": 7500
+}
+
+### DELETE WALLET BY ID
+DELETE {{url}}/wallets/1
+Content-Type: application/json
+
+### GET ALL CATEGORIES
+GET {{url}}/categories
+Content-Type: application/json
+
+### GET CATEGORY BY ID
+GET {{url}}/categories/1
+Content-Type: application/json
+
+### CREATE NEW CATEGORY
+POST {{url}}/categories
+Content-Type: application/json
+
+{
+    "name": "Groceries"
+}
+### UPDATE CATEGORY BY ID
+PATCH {{url}}/categories/1
+Content-Type: application/json
+
+{
+    "name": "Utilities"
+}
+### DELETE CATEGORY BY ID
+DELETE {{url}}/categories/1
+Content-Type: application/json
+
+
+
+### GET ALL TRANSACTIONS
+GET {{url}}/transactions
+Content-Type: application/json
+
+### GET TRANSACTION BY ID
+GET {{url}}/transactions/1
+Content-Type: application/json
+
+### CREATE NEW TRANSACTION
+POST {{url}}/transactions
+Content-Type: application/json
+
+{
+    "walletId": 1,
+    "amount": 1500,
+    "categoryId": 1,
+    "type": 0
+}
