@@ -22,7 +22,20 @@ router.get('/:table', (req,res) => {
             res.status(200).json(results)
           },req);
         });
-
+//SELECT RECORDS FROM TABLE by field
+router.get('/:table/:field/:op/:value',(req,res)=>{
+    let table = req.params.table;
+    let field = req.params.field;
+    let op = getOP(req.params.op)
+    let value = req.params.value;
+    if(req.params.op == 'lk'){
+        value = `%${value   }%`;
+    }
+    query(`SELECT * FROM ${table} WHERE ${field}${op}?`, [value], (error, results) =>{
+        if (error) throw res.status(500).json({error:error.message});
+        res.status(200).json(results)
+    }, req);
+})
 // LOGIN
 router.post('/:table/login', (req,res) =>{
   let {email,password} = req.body
@@ -125,5 +138,39 @@ router.delete('/:table', (req,res) => {
         res.status(200).json(results)
       },req);
     })
+function getOP(op){
+    switch(op){
+        case 'eq': {
+            op = '=';
+            break;
+        }
+        case 'lt': {
+            op = '<';
+            break;
+        }
+        case 'lte': {
+            op = '<=';
+            break;
+        }
+        case 'gt': {
+            op = '>';
+            break;
+        }
+        case 'gte': {
+            op = '>=';
+            break;
+        }
+        case 'not': {
+            op = '<>';
+            break;
+        }
+        case 'lk': {
+            op = ' like ';
+            break;
+        }
+    }
+    return op;
+}
+
 
 module.exports = router

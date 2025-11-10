@@ -11,3 +11,33 @@
 [2025-03-11 22:13:41] [32minfo[39m : [GET /wallets/1] - 1 record(s) affected.  1ms
 [2025-03-11 22:15:30] [32minfo[39m : [POST /categories] - 1 record(s) affected.  2ms
 [2025-03-11 22:16:33] [32minfo[39m : [POST /transactions] - 1 record(s) affected.  2ms
+[2025-10-11 15:08:13] [32minfo[39m : Server listening on port: 3000
+[2025-10-11 15:51:32] [32minfo[39m : [POST /users/registration] - 0 record(s) affected.  22ms
+[2025-10-11 15:51:32] [32minfo[39m : [POST /users/registration] - 1 record(s) affected.  16ms
+[2025-10-11 15:51:52] [32minfo[39m : [POST /users/login] - 0 record(s) affected.  2ms
+[2025-10-11 15:51:56] [32minfo[39m : [POST /users/login] - 0 record(s) affected.  1ms
+[2025-10-11 15:51:57] [32minfo[39m : [POST /users/login] - 0 record(s) affected.  1ms
+[2025-10-11 15:52:03] [32minfo[39m : [POST /users/login] - 0 record(s) affected.  1ms
+[2025-10-11 15:52:04] [32minfo[39m : [POST /users/login] - 0 record(s) affected.  2ms
+[2025-10-11 15:52:04] [32minfo[39m : [POST /users/login] - 0 record(s) affected.  1ms
+[2025-10-11 15:52:04] [32minfo[39m : [POST /users/login] - 0 record(s) affected.  2ms
+[2025-10-11 15:52:09] [32minfo[39m : [POST /users/login] - 0 record(s) affected.  0ms
+[2025-10-11 15:52:27] [32minfo[39m : [POST /users/login] - 0 record(s) affected.  1ms
+[2025-10-11 15:53:05] [32minfo[39m : [POST /users/login] - 0 record(s) affected.  2ms
+[2025-10-11 15:53:31] [32minfo[39m : [POST /users/login] - 0 record(s) affected.  1ms
+[2025-10-11 15:54:48] [32minfo[39m : [POST /users/login] - 0 record(s) affected.  1ms
+[2025-10-11 15:55:29] [32minfo[39m : [POST /users/registration] - 0 record(s) affected.  1ms
+[2025-10-11 15:55:29] [32minfo[39m : [POST /users/registration] - 1 record(s) affected.  4ms
+[2025-10-11 15:57:06] [32minfo[39m : [POST /users/login] - 1 record(s) affected.  2ms
+[2025-10-11 15:57:47] [32minfo[39m : [POST /users/login] - 1 record(s) affected.  2ms
+[2025-10-11 16:50:44] [31merror[39m : [DB - ERROR] ER_NO_REFERENCED_ROW_2: Cannot add or update a child row: a foreign key constraint fails (`13a_moneymanager`.`wallets`, CONSTRAINT `wallets_ibfk_1` FOREIGN KEY (`userId`) REFERENCES `users` (`id`) ON DELETE CASCADE)
+[2025-10-11 16:51:47] [31merror[39m : [DB - ERROR] ER_NO_REFERENCED_ROW_2: Cannot add or update a child row: a foreign key constraint fails (`13a_moneymanager`.`wallets`, CONSTRAINT `wallets_ibfk_1` FOREIGN KEY (`userId`) REFERENCES `users` (`id`) ON DELETE CASCADE)
+[2025-10-11 16:52:24] [31merror[39m : [DB - ERROR] ER_NO_REFERENCED_ROW_2: Cannot add or update a child row: a foreign key constraint fails (`13a_moneymanager`.`wallets`, CONSTRAINT `wallets_ibfk_1` FOREIGN KEY (`userId`) REFERENCES `users` (`id`) ON DELETE CASCADE)
+[2025-10-11 16:54:15] [32minfo[39m : [POST /wallets] - 1 record(s) affected.  14ms
+[2025-10-11 16:54:45] [32minfo[39m : [POST /wallets] - 1 record(s) affected.  4ms
+[2025-10-11 16:56:55] [32minfo[39m : [POST /wallets] - 1 record(s) affected.  14ms
+[2025-10-11 17:12:14] [32minfo[39m : Server listening on port: 3000
+[2025-10-11 17:20:07] [31merror[39m : [DB - ERROR] ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'eq 8' at line 1
+[2025-10-11 17:21:18] [32minfo[39m : Server listening on port: 3000
+[2025-10-11 17:26:10] [32minfo[39m : [GET /wallets/userId/eq/8] - 1 record(s) affected.  25ms
+[2025-10-11 18:22:17] [32minfo[39m : [GET /wallets/userId/eq/8] - 1 record(s) affected.  3ms
