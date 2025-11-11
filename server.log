@@ -115,3 +115,60 @@
 [2025-11-11 16:34:16] [31merror[39m : [DB - ERROR] ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'join WHERE id = transactions' at line 1
 [2025-11-11 16:34:37] [32minfo[39m : [GET /wallets/userId/eq/8] - 1 record(s) affected.  2ms
 [2025-11-11 16:34:37] [31merror[39m : [DB - ERROR] ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'join WHERE id = transactions' at line 1
+[2025-11-11 18:40:35] [32minfo[39m : Server listening on port: 3000
+[2025-11-11 18:41:42] [32minfo[39m : [POST /users/registration] - 0 record(s) affected.  32ms
+[2025-11-11 18:41:42] [32minfo[39m : [POST /users/registration] - 1 record(s) affected.  4ms
+[2025-11-11 18:41:59] [32minfo[39m : [POST /users/login] - 1 record(s) affected.  2ms
+[2025-11-11 18:41:59] [32minfo[39m : [GET /wallets/userId/eq/7] - 0 record(s) affected.  11ms
+[2025-11-11 18:42:22] [32minfo[39m : [POST /wallets] - 1 record(s) affected.  2ms
+[2025-11-11 18:42:22] [32minfo[39m : [GET /wallets/userId/eq/7] - 1 record(s) affected.  14ms
+[2025-11-11 18:42:27] [32minfo[39m : [POST /wallets] - 1 record(s) affected.  2ms
+[2025-11-11 18:42:27] [32minfo[39m : [GET /wallets/userId/eq/7] - 2 record(s) affected.  19ms
+[2025-11-11 18:42:30] [32minfo[39m : [DELETE /wallets/3] - 1 record(s) affected.  2ms
+[2025-11-11 18:42:32] [32minfo[39m : [GET /wallets/userId/eq/7] - 1 record(s) affected.  3ms
+[2025-11-11 18:42:36] [32minfo[39m : [POST /wallets] - 1 record(s) affected.  2ms
+[2025-11-11 18:42:36] [32minfo[39m : [GET /wallets/userId/eq/7] - 2 record(s) affected.  3ms
+[2025-11-11 18:45:10] [32minfo[39m : [GET /wallets/userId/eq/7] - 2 record(s) affected.  1ms
+[2025-11-11 18:45:16] [32minfo[39m : [GET /wallets/userId/eq/7] - 2 record(s) affected.  4ms
+[2025-11-11 18:45:16] [31merror[39m : [DB - ERROR] ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':)' at line 1
+[2025-11-11 18:45:43] [32minfo[39m : [GET /wallets/userId/eq/7] - 2 record(s) affected.  3ms
+[2025-11-11 18:45:43] [31merror[39m : [DB - ERROR] ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'join WHERE id = transactions' at line 1
+[2025-11-11 18:46:26] [32minfo[39m : [GET /wallets/userId/eq/7] - 2 record(s) affected.  6ms
+[2025-11-11 18:46:26] [31merror[39m : [DB - ERROR] ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'join WHERE id = transactions' at line 1
+[2025-11-11 18:46:30] [32minfo[39m : [GET /wallets/userId/eq/7] - 2 record(s) affected.  4ms
+[2025-11-11 18:46:30] [31merror[39m : [DB - ERROR] ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'join WHERE id = transactions' at line 1
+[2025-11-11 18:46:55] [32minfo[39m : [GET /wallets/userId/eq/7] - 2 record(s) affected.  1ms
+[2025-11-11 18:46:55] [31merror[39m : [DB - ERROR] ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'join WHERE id = transactions' at line 1
+[2025-11-11 18:46:59] [32minfo[39m : [GET /wallets/userId/eq/7] - 2 record(s) affected.  6ms
+[2025-11-11 18:46:59] [31merror[39m : [DB - ERROR] ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'join WHERE id = transactions' at line 1
+[2025-11-11 18:47:01] [32minfo[39m : [GET /wallets/userId/eq/7] - 2 record(s) affected.  3ms
+[2025-11-11 18:47:01] [31merror[39m : [DB - ERROR] ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'join WHERE id = transactions' at line 1
+[2025-11-11 18:47:27] [32minfo[39m : [GET /wallets/userId/eq/7] - 2 record(s) affected.  3ms
+[2025-11-11 18:47:27] [31merror[39m : [DB - ERROR] ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'join WHERE id = transactions' at line 1
+[2025-11-11 18:48:14] [32minfo[39m : [GET /wallets/userId/eq/7] - 2 record(s) affected.  3ms
+[2025-11-11 18:48:15] [31merror[39m : [DB - ERROR] ER_BAD_FIELD_ERROR: Unknown column 'wallet.id' in 'where clause'
+[2025-11-11 18:49:25] [32minfo[39m : [POST /users/login] - 1 record(s) affected.  1ms
+[2025-11-11 18:49:25] [32minfo[39m : [GET /wallets/userId/eq/7] - 2 record(s) affected.  5ms
+[2025-11-11 18:49:27] [32minfo[39m : [GET /wallets/userId/eq/7] - 2 record(s) affected.  1ms
+[2025-11-11 18:49:27] [31merror[39m : [DB - ERROR] ER_BAD_FIELD_ERROR: Unknown column 'wallet.id' in 'where clause'
+[2025-11-11 18:49:45] [32minfo[39m : [GET /wallets/userId/eq/7] - 2 record(s) affected.  1ms
+[2025-11-11 18:49:45] [31merror[39m : [DB - ERROR] ER_BAD_FIELD_ERROR: Unknown column 'wallet.id' in 'where clause'
+[2025-11-11 18:50:23] [32minfo[39m : Server listening on port: 3000
+[2025-11-11 18:56:03] [32minfo[39m : Server listening on port: 3000
+[2025-11-11 18:56:57] [32minfo[39m : Server listening on port: 3000
+[2025-11-11 18:58:59] [32minfo[39m : Server listening on port: 3000
+[2025-11-11 18:59:06] [32minfo[39m : [GET /wallets/userId/eq/7] - 2 record(s) affected.  45ms
+[2025-11-11 18:59:06] [31merror[39m : [DB - ERROR] ER_BAD_FIELD_ERROR: Unknown column 'wallet.id' in 'on clause'
+[2025-11-11 18:59:18] [32minfo[39m : Server listening on port: 3000
+[2025-11-11 18:59:23] [32minfo[39m : Server listening on port: 3000
+[2025-11-11 18:59:24] [32minfo[39m : [GET /wallets/userId/eq/7] - 2 record(s) affected.  71ms
+[2025-11-11 18:59:25] [32minfo[39m : [GET /join/transactions/2,4] - 0 record(s) affected.  6ms
+[2025-11-11 19:16:08] [32minfo[39m : [GET /wallets/userId/eq/7] - 2 record(s) affected.  2ms
+[2025-11-11 19:16:08] [32minfo[39m : [GET /join/transactions/2,4] - 10 record(s) affected.  2ms
+[2025-11-11 19:16:33] [32minfo[39m : [GET /wallets/userId/eq/7] - 2 record(s) affected.  2ms
+[2025-11-11 19:16:33] [32minfo[39m : [GET /join/transactions/2,4] - 10 record(s) affected.  2ms
+[2025-11-11 19:17:13] [32minfo[39m : [GET /wallets/userId/eq/7] - 2 record(s) affected.  2ms
+[2025-11-11 19:17:13] [32minfo[39m : [GET /join/transactions/2,4] - 10 record(s) affected.  2ms
+[2025-11-11 19:20:33] [32minfo[39m : Server listening on port: 3000
+[2025-11-11 19:20:54] [32minfo[39m : [GET /wallets/userId/eq/7] - 2 record(s) affected.  44ms
+[2025-11-11 19:20:54] [31merror[39m : [DB - ERROR] ER_NON_UNIQ_ERROR: Column 'id' in field list is ambiguous

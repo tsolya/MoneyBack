@@ -9,7 +9,7 @@ const passwdRegExp = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/;
 router.get('/join/:table/:ids', (req,res) => {
   const table = req.params.table
   const ids = req.params.ids
-    query(`SELECT * FROM ${table} LEFT JOIN wallets ON transactions.walletId = wallet.Id LEFT JOIN categories ON transactions.categoryId = categories.id WHERE wallet.id IN (${ids})`,[], (error, results) => {
+    query(`SELECT transactions.id AS id,walletId,wallets.name AS walletName,amount,categoryId, categories.name AS categoryName, type FROM ${table} LEFT JOIN wallets ON transactions.walletId = wallets.id LEFT JOIN categories ON transactions.categoryId = categories.id WHERE wallets.id IN (${ids})`,[], (error, results) => {
         if (error) return res.status(500).json({error: error.message})
         res.status(200).json(results)
       },req);
