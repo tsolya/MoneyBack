@@ -5,6 +5,16 @@ var SHA1 = require("crypto-js/sha1")
 const { error } = require("winston")
 const passwdRegExp = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/;
 
+//Join select for transactions
+router.get('/join/:table/:ids', (req,res) => {
+  const table = req.params.table
+  const ids = req.params.ids
+    query(`SELECT * FROM ${table} LEFT JOIN wallets ON transactions.walletId = wallet.Id LEFT JOIN categories ON transactions.categoryId = categories.id WHERE wallet.id IN (${ids})`,[], (error, results) => {
+        if (error) return res.status(500).json({error: error.message})
+        res.status(200).json(results)
+      },req);
+    })
+
 // SELECT all records from table
 router.get('/:table', (req,res) => {
   const table = req.params.table
